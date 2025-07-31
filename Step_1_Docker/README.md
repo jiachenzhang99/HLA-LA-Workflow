@@ -12,6 +12,12 @@ This Docker image provides a containerized environment for running HLA-LA.
 
 ## Usage
 
+### Pulling the Build Image
+
+```bash
+docker pull jiachenzdocker/hla-la
+```
+
 ### Building the Docker Image
 
 ```bash
