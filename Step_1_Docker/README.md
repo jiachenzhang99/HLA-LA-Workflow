@@ -52,28 +52,10 @@ The image includes a user-friendly wrapper script (type_hla.sh) that:
 - Provides clear error messages and usage instructions
 
 
-## Requirements
+## Requirements to Build Image
 
-### Resources
 
-- At least 8GB RAM (16GB+ recommended)
+- At least 64GB RAM (128GB+ recommended)
 - At least 4 CPU cores (8+ recommended)
-- At least 20GB disk space
+- At least 60GB disk space
 
-### Input Files
-
-- CRAM/BAM file with corresponding index (.crai/.bai)
-- Reference FASTA file with index (.fai)
-
-## Troubleshooting
-
-If you encounter issues:
-
-1. **Missing index files**: Ensure your CRAM/BAM files have corresponding index files (.crai/.bai)
-2. **Memory issues**: Try running on a machine with more RAM (HLA-LA needs at least 8GB)
-3. **Path issues**: Ensure paths are correct and files are readable
-
-## References
-
-- HLA-LA GitHub: https://github.com/DiltheyLab/HLA-LA
-- Original paper: https://doi.org/10.1186/s13059-018-1561-7
