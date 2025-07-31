@@ -19,33 +19,6 @@ This Docker image provides a containerized environment for running HLA-LA.
 docker build -t hla-la:latest .
 ```
 
-## Docker Image Creation
-
-The Docker image is built using a multi-stage approach for optimal size and performance:
-
-### Stage 1: Builder
-
-Base Image: Debian Bullseye (slim)
-
-Package Manager: micromamba (lightweight alternative to Anaconda)
-
-HLA-LA Installation: Installed via bioconda package manager
-
-Graph Data: Downloads and extracts PRG_MHC_GRCh38_withIMGT.tar.gz
-
-Pre-indexing: Runs HLA-LA --action prepareGraph during build time
-
-
-### Stage 2: Final Runtime Image
-
-Base Image: Debian Bullseye (slim)
-
-Components: Copies only the pre-built conda environment with indexed graphs
-
-User Setup: Creates non-root user for security
-
-Wrapper Script: Includes type_hla.sh for simplified execution
-
 
 ## Technical Details
 
@@ -63,6 +36,21 @@ This Docker image:
 3. Uses micromamba instead of full Anaconda for a lighter image
 
 4. Sets up a non-root user to follow security best practices
+
+
+## Wrapper Script
+The image includes a user-friendly wrapper script (type_hla.sh) that:
+
+Validates input parameters and file existence
+
+Extracts sample ID from CRAM/BAM filename
+
+Runs HLA-LA with appropriate parameters
+
+Copies output files to standardized locations
+
+Provides clear error messages and usage instructions
+
 
 ## Requirements
 
