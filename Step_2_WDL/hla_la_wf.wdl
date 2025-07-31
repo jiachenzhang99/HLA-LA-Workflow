@@ -63,7 +63,7 @@ task hla_la_typing {
 
     runtime {
         docker: "jiachenzdocker/hla-la:latest"
-        dx_instance_type: "mem3_ssd1_v2_x8"
+        dx_instance_type: "mem3_ssd1_v2_x8" #adjust for customized CPU, RAM and Storage (https://documentation.dnanexus.com/developer/api/running-analyses/instance-types)
     }
 
     output {
