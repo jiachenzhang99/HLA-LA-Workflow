@@ -16,7 +16,7 @@ workflow hla_la_calling_wf {
             cram_index = cram_index,
             ref_genome = ref_genome,
             ref_genome_index = ref_genome_index,
-	        ref_genome_gzi = ref_genome_gzi,
+	    ref_genome_gzi = ref_genome_gzi,
             nr_threads = nr_threads
     }
 
