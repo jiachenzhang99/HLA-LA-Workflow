@@ -13,9 +13,9 @@ The `hla_la_wf.wdl` workflow wraps the HLA-LA Docker container from step 1 (`jia
 | --- | --- |
 | `cram_file` | Input CRAM or BAM file containing sequencing reads |
 | `cram_index` | Index file for the CRAM/BAM (.crai or .bai) |
-| `ref_genome` | Reference genome FASTA file (e.g., Homo_sapiens_assembly38.fasta.gz) |
-|`ref_genome_index` | Reference genome index (.fai file) |
-| `ref_genome_gzi` | Reference genome gzip index (.gzi file) |
+| `ref_genome` | Reference genome FASTA file (e.g., Homo_sapiens_assembly38.fasta.gz) https://github.com/broadinstitute/gatk/raw/master/src/test/resources/large/Homo_sapiens_assembly38.fasta.gz |
+|`ref_genome_index` | Reference genome index (.fai file) https://github.com/broadinstitute/gatk/raw/master/src/test/resources/large/Homo_sapiens_assembly38.fasta.gz.fai |
+| `ref_genome_gzi` | Reference genome gzip index (.gzi file) https://github.com/broadinstitute/gatk/raw/master/src/test/resources/large/Homo_sapiens_assembly38.fasta.gz.gzi |
 | `nr_threads` | Number of CPU threads to use for processing |
 
 Note:
