@@ -24,3 +24,8 @@ The hla_la_wf.wdl workflow wraps the HLA-LA Docker container from step 1 (jiache
 | --- | --- |
 | `hla_best_guess` | Best HLA allele calls (G-group resolution) |
 | `hla_all_alleles` | All possible HLA alleles with confidence scores |
+
+Output files are named using the sample ID derived from the input CRAM filename:
+
+- `{sample_id}_output_G.txt` - Best HLA calls
+- `{sample_id}_output.txt` - All possible alleles
