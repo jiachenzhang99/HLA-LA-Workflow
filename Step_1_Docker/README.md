@@ -41,15 +41,15 @@ This Docker image:
 ## Wrapper Script
 The image includes a user-friendly wrapper script (type_hla.sh) that:
 
-Validates input parameters and file existence
+- Validates input parameters and file existence
 
-Extracts sample ID from CRAM/BAM filename
+- Extracts sample ID from CRAM/BAM filename
 
-Runs HLA-LA with appropriate parameters
+- Runs HLA-LA with appropriate parameters
 
-Copies output files to standardized locations
+- Copies output files to standardized locations
 
-Provides clear error messages and usage instructions
+- Provides clear error messages and usage instructions
 
 
 ## Requirements
