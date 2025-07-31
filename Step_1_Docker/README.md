@@ -1,6 +1,6 @@
 # HLA-LA Docker Image
 
-This Docker image provides a containerized environment for running HLA-LA - a tool for HLA type inference from sequencing data.
+This Docker image provides a containerized environment for running HLA-LA.
 
 ## Features
 
@@ -15,35 +15,9 @@ This Docker image provides a containerized environment for running HLA-LA - a to
 ### Building the Docker Image
 
 ```bash
-# Clone this repository
-git clone https://github.com/your-username/hla-la-docker.git
-cd hla-la-docker
-
 # Build the Docker image
 docker build -t hla-la:latest .
 ```
-
-### Running HLA-LA
-
-To run HLA typing on your data:
-
-```bash
-docker run -v /path/to/data:/data hla-la:latest type_hla.sh <nr_threads> <cram_file> <ref_fasta_file>
-```
-
-Parameters:
-- `nr_threads`: Number of CPU threads to use (e.g., 8)
-- `cram_file`: Path to input CRAM or BAM file
-- `ref_fasta_file`: Path to reference FASTA file used to create the CRAM/BAM
-
-Example:
-```bash
-docker run -v $(pwd):/data hla-la:latest type_hla.sh 8 /data/sample.cram /data/reference.fasta
-```
-
-The output files will be created in the mounted directory:
-- `sample_output_G.txt`: Best HLA allele calls
-- `sample_output.txt`: All possible HLA alleles
 
 ## Technical Details
 
