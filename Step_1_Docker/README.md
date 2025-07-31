@@ -39,7 +39,7 @@ This Docker image:
 
 
 ## Wrapper Script
-The image includes a user-friendly wrapper script (type_hla.sh) that:
+The image includes a user-friendly wrapper script 'type_hla.sh' that:
 
 - Validates input parameters and file existence
 
