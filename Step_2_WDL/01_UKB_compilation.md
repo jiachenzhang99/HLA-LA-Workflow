@@ -8,3 +8,8 @@ java -jar dxCompiler-2.12.0.jar compile \
     -project [UKB Project ID] \
     -folder /UKB/directory/to/store/workflow
 ```
+
+### Prerequisties
+
+- *dxCompiler*: Download the latest version from the dxWDL releases
+- *dx CLI*: Ensure you have the DNAnexus command line tools installed and authenticated
