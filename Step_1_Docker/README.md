@@ -1,6 +1,6 @@
 # HLA-LA Docker Image
 
-This Docker image provides a containerized environment for running HLA-LA.
+This Docker image provides a containerized environment for running HLA-LA (v1.0.4).
 
 ## Features
 
