@@ -20,9 +20,6 @@ The `hla_la_wf.wdl` workflow wraps the HLA-LA Docker container from step 1 (`jia
 
 Note:
 
-- `ref_genome`: https://github.com/broadinstitute/gatk/raw/master/src/test/resources/large/Homo_sapiens_assembly38.fasta.gz
-- `ref_genome_index`: https://github.com/broadinstitute/gatk/raw/master/src/test/resources/large/Homo_sapiens_assembly38.fasta.gz.fai
-- `ref_genome_gzi`: https://github.com/broadinstitute/gatk/raw/master/src/test/resources/large/Homo_sapiens_assembly38.fasta.gz.gzi
 - CRAM and CRAI files are normally stored in the same folder under the `Bulk` folder.
 - Adjust `nr_threads` input based on the defined `dx_instance_type` parameter in the .wdl file
 
