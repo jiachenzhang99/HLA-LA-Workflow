@@ -11,5 +11,5 @@ java -jar dxCompiler-2.12.0.jar compile \
 
 ### Prerequisties
 
-- ^dxCompiler^: Download the latest version from the dxWDL releases
-- *dx CLI*: Ensure you have the DNAnexus command line tools installed and authenticated
+- **dxCompiler**: Download the latest version from the dxWDL releases (https://documentation.dnanexus.com/downloads#dxcompiler)
+- **dx CLI**: Ensure you have the DNAnexus command line tools installed and authenticated (https://documentation.dnanexus.com/downloads)
