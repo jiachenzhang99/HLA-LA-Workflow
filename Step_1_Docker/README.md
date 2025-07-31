@@ -16,7 +16,7 @@ This Docker image provides a containerized environment for running HLA-LA.
 
 ```bash
 # Clone the repo with Dockerfile
-git clone https://github.com/jiachenzhang99/HLA_LA.git
+git clone https://github.com/jiachenzhang99/HLA-LA.git
 cd Step_1_Docker
 
 # Build the Docker image
