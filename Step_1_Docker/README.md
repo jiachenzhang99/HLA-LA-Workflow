@@ -56,6 +56,6 @@ The image includes a user-friendly wrapper script `type_hla.sh` that:
 
 
 - At least 64GB RAM (128GB+ recommended)
-- At least 4 CPU cores (8+ recommended)
+- At least 8 CPU cores (16+ recommended)
 - At least 60GB disk space
 
