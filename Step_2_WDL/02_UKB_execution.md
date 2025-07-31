@@ -15,3 +15,4 @@ dx run UKB/directory/of/stored/workflow \
     --priority high \ #adjust for priority 'low', 'normal', or 'high'
     --destination=UKB/directory/to/store/results
 ```
+
