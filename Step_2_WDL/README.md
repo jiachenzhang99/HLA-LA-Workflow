@@ -18,6 +18,11 @@ The `hla_la_wf.wdl` workflow wraps the HLA-LA Docker container from step 1 (`jia
 | `ref_genome_gzi` | Reference genome gzip index (.gzi file) |
 | `nr_threads` | Number of CPU threads to use for processing |
 
+Note:
+
+- CRAM and CRAI files are normally stored in the same folder under the `Bulk` folder.
+- Adjust `nr_threads` input based on the defined `dx_instance_type` parameter in the .wdl file
+
 ## Expected Outputs
 
 | Output | Description |
