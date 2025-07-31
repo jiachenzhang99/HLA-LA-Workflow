@@ -15,6 +15,10 @@ This Docker image provides a containerized environment for running HLA-LA.
 ### Building the Docker Image
 
 ```bash
+# Clone the repo with Dockerfile
+git clone https://github.com/jiachenzhang99/HLA_LA.git
+cd Step_1_Docker
+
 # Build the Docker image
 docker build -t hla-la:latest .
 ```
