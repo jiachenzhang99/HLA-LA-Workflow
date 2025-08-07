@@ -1,7 +1,8 @@
 # Create Batches of WGS datafiles
 
 
-Since UKB RAP stores the DRAGEN WGS data in separate folders (i.e. 10, 11, 12, ... 60), batch input is needed to run large number of sample analyses parallelly. For best reproducibility and monitoring, the following code will be executed line by line on local machine (e.g. terminal, VScode, etc.). 
+Since UKB RAP stores the DRAGEN WGS data in separate folders (i.e. 10, 11, 12, ... 60), batch input is needed to run large number of sample analyses parallelly instead of manually starting the pipeline once for each of the UK Biobank participants. For best reproducibility and monitoring, the following code will be executed line by line on local machine (e.g. terminal, VScode, etc.). Column names are important and very tricky, see more here: https://documentation.dnanexus.com/user/running-apps-and-workflows/running-batch-jobs
+
 
 
 ```bash
