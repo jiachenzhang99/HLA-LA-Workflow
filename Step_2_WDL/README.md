@@ -38,6 +38,6 @@ Output files are named using the sample ID derived from the input CRAM filename:
 ## Computation Costs
 
 The minimum computation requirement for HLA calling of one sample is
-- > 2 CPU cores
-- > 32G RAM
-- > 150G Disk 
+- 2 CPU cores
+- 32G RAM
+- 150G Disk 
