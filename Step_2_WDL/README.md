@@ -34,3 +34,10 @@ Output files are named using the sample ID derived from the input CRAM filename:
 
 - `{sample_id}_output_G.txt` - Best HLA calls
 - `{sample_id}_output.txt` - All possible alleles
+
+## Computation Costs
+
+The minimum computation requirement for HLA calling of one sample is
+- >2 CPU cores
+- >32G RAM
+- >150G Disk 
