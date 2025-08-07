@@ -37,7 +37,15 @@ Output files are named using the sample ID derived from the input CRAM filename:
 
 ## Computation Costs
 
-The minimum computation requirement for HLA calling of one sample is
+The minimum computational requirements for HLA calling of a single sample are:
 - 2 CPU cores
 - 32G RAM
-- 150G Disk 
+- 150G Disk (SSD only)
+
+While performance may vary depending on user settings and available resources, I found the instance type `mem3_ssd1_v2_x8` (8 cores, 64 GB RAM, 300 GB SSD) to be the most cost-effective based on my tests. Below is an estimate of the runtime and cost for analyzing one sample under different priority settings:
+- high: 1h41m  £0.51
+- normal: 2h8m £0.56
+- low: 11h28m £0.21
+- normal (batch of 10 samples): £5.91
+
+Although low priority is the cheapest option, it carries a high risk of interruption, which can lead to job failure. Therefore, I recommend using either normal or high priority when scaling up the analysis.
