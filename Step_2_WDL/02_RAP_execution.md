@@ -1,8 +1,8 @@
 # Running the Workflow on UKB RAP
 
-## Single sample execution
+## Single sample execution example
 
-To run the workflow ('hla_la_wf.wdl') on a sinlge sample:
+To run the workflow ('hla_la_wf.wdl') on a sinlge sample, execute the following code after `dx login`.
 
 ```bash
 dx run UKB/directory/of/stored/workflow \
