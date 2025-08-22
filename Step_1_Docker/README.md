@@ -1,24 +1,23 @@
 # HLA-LA Docker Image
 
-This Docker image provides a containerized environment for running HLA-LA (v1.0.4).
+This Docker image provides implementation of HLALA (HLA typing from Linearly projected graph Alignments v1.04). HLALA is a graph-based method for accurate HLA typing from whole-genome sequencing (WGS), whole-exome sequencing (WES), and long-read sequencing data.
 
 ## Features
 
-- Based on Debian Bullseye (slim)
-- Uses micromamba for efficient dependency management
-- **Pre-indexed graph files** for immediate use without setup
-- Multi-stage build for smaller final image size
-- User-friendly wrapper script for running HLA-LA
+- Pre-built graph indices: The Docker image includes pre-indexed BWA references and prepared HLA-LA graphs to minimize runtime
+- Optimized image size: Multi-stage build process reduces the final image size while maintaining functionality
+- Cromwell/WDL compatible: Designed for seamless integration with Cromwell workflow engine using Google Batch API
+- Support for CRAM/BAM files: Handles both CRAM and BAM input formats with appropriate reference genome handling
 
 ## Usage
 
-### Pulling the Built Image
+### Pulling the Pre-Built Image
 
 ```bash
-docker pull jiachenzdocker/hla-la
+docker pull jiachenzdocker/hla-la:2.0
 ```
 
-### Building the Docker Image
+### Building from Source
 
 ```bash
 # Clone the repo with Dockerfile
@@ -26,26 +25,26 @@ git clone https://github.com/jiachenzhang99/HLA-LA.git
 cd Step_1_Docker
 
 # Build the Docker image
-docker build -t hla-la:latest .
+docker build -f HLA_LA.v2.Dockerfile -t hla-la:2.0 .
 ```
 
 
 ## Technical Details
 
-This Docker image:
+This Docker image includes:
 
-1. Uses a multi-stage build process:
-   - First stage: Installs HLA-LA and indexes the graph
-   - Second stage: Creates a minimal runtime image with only necessary components
+1. HLA-LA software: Version from bioconda
+2. PRG graph: PRG_MHC_GRCh38_withIMGT pre-downloaded and prepared
+3. BWA indices: Pre-built for the extended reference genome
+4. Dependencies: samtools, bwa, perl modules
 
-2. **Pre-indexes graph files during the build process**:
-   - Downloads the PRG_MHC_GRCh38_withIMGT.tar.gz graph package
-   - Verifies the checksum for security
-   - Runs the graph indexing step using `HLA-LA --action prepareGraph`
+### Graph Preparation
 
-3. Uses micromamba instead of full Anaconda for a lighter image
+The image build process automatically:
 
-4. Sets up a non-root user to follow security best practices
+1. Downloads the PRG_MHC_GRCh38_withIMGT graph (MD5: 525a8aa0c7f357bf29fe2c75ef1d477d)
+2. Indexes the extended reference genome with BWA
+3. Prepares the HLA-LA graph using `--action prepareGraph`
 
 
 ## Wrapper Script
@@ -68,4 +67,5 @@ The image includes a user-friendly wrapper script `type_hla.sh` that:
 - At least 64GB RAM (128GB+ recommended)
 - At least 8 CPU cores (16+ recommended)
 - At least 60GB disk space
+
 
