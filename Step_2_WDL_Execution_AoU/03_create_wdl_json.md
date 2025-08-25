@@ -107,9 +107,9 @@ json_content = """
 {
   "hla_la_calling_aou.cram_file": "gs://[CRAM file URI]",
   "hla_la_calling_aou.cram_index": "gs://[CRAI file URI]",
-  "hla_la_calling_aou.ref_genome": "gs://Homo_sapiens_assembly38.fasta.gz",
-  "hla_la_calling_aou.ref_genome_index": "gs://Homo_sapiens_assembly38.fasta.gz.fai",
-  "hla_la_calling_aou.ref_genome_gzi": "gs://Homo_sapiens_assembly38.fasta.gz.gzi",
+  "hla_la_calling_aou.ref_genome": "gs://[Homo_sapiens_assembly38.fasta.gz]",
+  "hla_la_calling_aou.ref_genome_index": "gs://[Homo_sapiens_assembly38.fasta.gz.fai]",
+  "hla_la_calling_aou.ref_genome_gzi": "gs://[Homo_sapiens_assembly38.fasta.gz.gzi]",
   "hla_la_calling_aou.nr_threads": 6
 }
 """
