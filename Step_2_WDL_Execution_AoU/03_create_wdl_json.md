@@ -105,11 +105,11 @@ json_filename = "hla_la_wf_aou.json"
 #create the content inside the json file, listing the google bucket associated with this workspace
 json_content = """
 {
-  "hla_la_calling_aou.cram_file": "gs://fc-aou-datasets-controlled/pooled/wgs/cram/v8_delta/wgs_9999373.cram",
-  "hla_la_calling_aou.cram_index": "gs://fc-aou-datasets-controlled/pooled/wgs/cram/v8_delta/wgs_9999373.cram.crai",
-  "hla_la_calling_aou.ref_genome": "gs://fc-secure-f2ecfa45-d7db-4232-929f-8cf417be1eb0/jiachenz/hla_typing/reference_files/Homo_sapiens_assembly38.fasta.gz",
-  "hla_la_calling_aou.ref_genome_index": "gs://fc-secure-f2ecfa45-d7db-4232-929f-8cf417be1eb0/jiachenz/hla_typing/reference_files/Homo_sapiens_assembly38.fasta.gz.fai",
-  "hla_la_calling_aou.ref_genome_gzi": "gs://fc-secure-f2ecfa45-d7db-4232-929f-8cf417be1eb0/jiachenz/hla_typing/reference_files/Homo_sapiens_assembly38.fasta.gz.gzi",
+  "hla_la_calling_aou.cram_file": "gs://[CRAM file URI]",
+  "hla_la_calling_aou.cram_index": "gs://[CRAI file URI]",
+  "hla_la_calling_aou.ref_genome": "gs://Homo_sapiens_assembly38.fasta.gz",
+  "hla_la_calling_aou.ref_genome_index": "gs://Homo_sapiens_assembly38.fasta.gz.fai",
+  "hla_la_calling_aou.ref_genome_gzi": "gs://Homo_sapiens_assembly38.fasta.gz.gzi",
   "hla_la_calling_aou.nr_threads": 6
 }
 """
