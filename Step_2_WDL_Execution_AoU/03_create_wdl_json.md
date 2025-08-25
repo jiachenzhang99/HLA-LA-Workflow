@@ -97,7 +97,9 @@ fp.close()
 print(WDL_content)
 ```
 
-Create the accompanying JSON file:
+## Create the JSON File
+
+Create the accompanying JSON file that specifies input files directories:
 
 ```
 json_filename = "hla_la_wf_aou.json"
