@@ -47,5 +47,5 @@ While performance may vary depending on user settings and available resources, I
 | Priority | Job Duration | Cost (£) |
 | --- | --- | ---|
 | high | 1h2m | 0.22 |
-| normal (batch of 10) | | 2.51 |
+| normal (batch of 10) | ~1h/sample | 2.51 |
 
