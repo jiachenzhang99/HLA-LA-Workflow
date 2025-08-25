@@ -42,7 +42,7 @@ The minimum computational requirements for HLA calling of a single sample are:
 - 32G RAM
 - 150G Disk (SSD only)
 
-While performance may vary depending on user settings and available resources, I found the instance type `mem3_ssd1_v2_x8` (8 cores, 64 GB RAM, 300 GB SSD) to be the most cost-effective based on my tests. Below is an estimate of the runtime and cost for analyzing one sample under different priority settings as of August 7th, 2025:
+While performance may vary depending on user settings and available resources, I found the instance type `mem3_ssd1_v2_x8` (8 cores, 64 GB RAM, 300 GB SSD) to be the most reliable and cost-effective based on my tests. Below is an estimate of the runtime and cost for analyzing as of August 20th, 2025:
 
 | Priority | Job Duration | Cost (£) |
 | --- | --- | ---|
