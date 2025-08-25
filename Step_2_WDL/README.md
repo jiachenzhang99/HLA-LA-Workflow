@@ -46,10 +46,6 @@ While performance may vary depending on user settings and available resources, I
 
 | Priority | Job Duration | Cost (£) |
 | --- | --- | ---|
-| high | 1h41m | 0.51 |
-| normal | 2h8m | 0.56 |
-| low | 11h28m | 0.21 |
-| normal (batch of 10) | | 5.91 |
+| high | 1h2m | 0.22 |
+| normal (batch of 10) | | 2.51 |
 
-
-Although low priority is the cheapest option, it carries a high risk of interruption, which can lead to job failure. Therefore, I recommend using either normal or high priority when scaling up the analysis.
