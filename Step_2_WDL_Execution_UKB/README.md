@@ -44,8 +44,8 @@ The minimum computational requirements for HLA calling of a single sample are:
 
 While performance may vary depending on user settings and available resources, I found the instance type `mem3_ssd1_v2_x8` (8 cores, 64 GB RAM, 300 GB SSD) to be the most reliable and cost-effective based on my tests. Below is an estimate of the runtime and cost for analyzing as of August 20th, 2025:
 
-| Priority | Job Duration | Cost (£) |
+| Priority | Job Duration | Cost ($) |
 | --- | --- | ---|
-| high | 1h2m | 0.22 |
-| normal (batch of 10) | ~1h/sample | 2.51 |
+| high | 1h2m | 0.30 |
+| normal (batch of 10) | ~1h/sample | 3.41 |
 
